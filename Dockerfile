@@ -25,4 +25,8 @@ RUN unzip awscliv2.zip
 RUN ls -lah
 RUN ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
 
+# set aslias
+RUN alias auth-assume-role='bash /scripts/auth/assumeRole.sh'
+RUN alias auth-user='bash /scripts/auth/configure.sh'
+
 RUN echo $(whoami)
