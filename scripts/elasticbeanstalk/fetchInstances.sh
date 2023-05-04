@@ -8,5 +8,5 @@ curl -s https://raw.githubusercontent.com/wyattmunson/aws-toolkit/main/scripts/a
 
 
 # describe instance health
-aws elasticbeanstalk describe-instances-health --environment-name=<+infra.variables.EnvironmentName> > $INSTANCE_OUTPUT_PATH
+aws elasticbeanstalk describe-instances-health --environment-name=<+infra.variables.ebEnvironmentName> > $INSTANCE_OUTPUT_PATH
 cat $INSTANCE_OUTPUT_PATH

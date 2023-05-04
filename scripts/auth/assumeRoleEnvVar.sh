@@ -3,8 +3,8 @@
 curl -s https://raw.githubusercontent.com/wyattmunson/aws-toolkit/main/scripts/helpers/header.sh | bash -s "ASSUMING AWS ROLE"
 
 
-export AWS_DEFAULT_REGION=<+infra.variables.Region>
-export AWS_ROLE_ARN=<+infra.variables.stsRole>
+export AWS_DEFAULT_REGION=<+infra.variables.awsRegion>
+export AWS_ROLE_ARN=<+infra.variables.awsRoleArn>
 NAME="Harness-Assume-Role"
 
 if [ "$AWS_ROLE_ARN" != "None" ]; then
